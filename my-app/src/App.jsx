@@ -10,15 +10,18 @@ import Home from './components/Home'
 import About from './components/About'
 
 const App = () => {
-  
+  const [attendanceRecords, setAttendanceRecords] = React.useState([])
+  const updateList=(list)=>{
+      setAttendanceRecords(list)
+  }
   return (
     <>
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/students' element={<StudentList />} />
-        <Route path='/attendance' element={<Attendance />} />
-        <Route path='/attendancerecord' element={<AttendanceRecord />} />
+        <Route path='/attendance' element={<Attendance updateList={updateList}/>} />
+        <Route path='/attendancerecord' element={<AttendanceRecord attendanceRecords={attendanceRecords}/>} />
         <Route path='/about' element={<About />} />
       </Routes>
       <Footer />

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Attendance = () => {
+const Attendance = ({updateList}) => {
   const [list, setList] = React.useState([
     {sno:1,regno:111723203001,name:"Akash",status:""},
     {sno:2,regno:111723203002,name:"Abishek",status:""},
@@ -48,9 +48,9 @@ const Attendance = () => {
   
   const markAttendance = (regno,status) => {
     const updList=list.map((student)=>{
-      student.regno===regno ? student.status=status:"";
-    })
-    setList(updList);
+      return student.regno===regno ? {...student,status:status} : student})
+    setList(updList)
+    updateList(updList);
   }
   return (
     <div>

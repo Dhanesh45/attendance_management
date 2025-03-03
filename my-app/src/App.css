@@ -58,7 +58,7 @@
     width: 750px;   
     border-collapse: collapse;
     border: 2px solid black;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
 }
 .table1 th{
     border: 2px solid white;
@@ -78,7 +78,7 @@
     width: 1000px;   
     border-collapse: collapse;
     border: 2px solid black;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
     text-align: center;
 }
 .table2 th{
@@ -108,6 +108,28 @@
     background-color:yellow;
     color:black;
     border: 2px solid black;
+}
+
+.table3{
+    margin: auto;
+    width: 1000px;   
+    border-collapse: collapse;
+    border: 2px solid black;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.table3 th{
+    border: 2px solid white;
+    padding: 10px;
+    background-color: black;
+    color: yellow;
+}
+.table3 td{
+    font-weight: 500;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: yellow;
+    color: black;
 }
 .about{
     margin:0px;
