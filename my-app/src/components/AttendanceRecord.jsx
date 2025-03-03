@@ -1,8 +1,11 @@
 import React from 'react'
 
-const AttendanceRecord = () => {
+const AttendanceRecord = (props) => {
+  const attendanceRecords = props.attendanceRecords;
   return (
-    <div>AttendanceRecord</div>
+    <div>
+      AttendanceRecord
+    </div>
   )
 }
 

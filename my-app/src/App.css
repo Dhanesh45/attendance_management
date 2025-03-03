@@ -1,23 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Inter', sans-serif;
 }
-.div1{
+.home{
     text-align: center;
     margin: 0px;
     padding: 0px;
 }
-.h1{
+.header{
     padding: 20px;
-    font-size: 70px;
+    display: flex;
+    justify-content: space-between;
     background-color: yellow;
-    color: black;
-
+    margin-bottom: 40px;
+    border-bottom: 2px solid black;
 }
-.p1{
-    font-size: 25px;
+.ul{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-left: 20px;
+    list-style: none;
+}
+.ul button{
+    padding: 10px 20px;
+    background-color:black;
+    color:yellow;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 0px 20px;
+    border: 2px solid black;
+}
+.ul button:hover{
+    background-color:yellow;
+    color:black;
+    border: 2px solid black;
+}
+.homep1{
     padding: 30px;
     color: black;
+    font-weight: 500;
+    font-size: 30px;
 }
 
 .container{
@@ -33,39 +61,73 @@
     margin-bottom: 40px;
 }
 .table1 th{
-    border: 2px solid black;
+    border: 2px solid white;
     padding: 10px;
-    
+    background-color: black;
+    color: yellow;
 }
 .table1 td{
+    font-weight: 500;
     border: 2px solid black;
     padding: 10px;
+    background-color: yellow;
+    color: black;
 }
-
+.table2{
+    margin: auto;
+    width: 1000px;   
+    border-collapse: collapse;
+    border: 2px solid black;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.table2 th{
+    border: 2px solid white;
+    padding: 10px;
+    background-color: black;
+    color: yellow;
+}
+.table2 td{
+    font-weight: 500;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: yellow;
+    color: black;
+}
+.table2 td button{
+    padding: 10px 20px;
+    background-color:black;
+    color:yellow;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 0px 20px;
+    border: 2px solid black;
+}
+.table2 td button:hover{
+    background-color:yellow;
+    color:black;
+    border: 2px solid black;
+}
 .about{
     margin:0px;
     padding:0px;
     text-align: center;
     font-size: 30px;
 }
-
-
 .features{
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: left;
 }
-.navbar{
-    padding: 30px;
-}
-
-.navbar ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    padding: 10px 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
+.footer {
+    background-color: #333;
+    color:yellow;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
