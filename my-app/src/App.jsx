@@ -1,8 +1,10 @@
 import React from 'react'
-import Home from './components/Home'
+import Header from './components/Header'
+import NavigationBar from './components/NavigationBar'
+import Footer from './components/Footer'
+import "./App.css"
+//import { Routes , Route } from 'react-router-dom'
 import StudentList from './components/StudentList'
-import About from './components/About'
-import Button from './components/Button'
 
 const App = () => {
   const students=[
@@ -51,9 +53,13 @@ const App = () => {
   ]
   return (
     <>
-      {/* <Home/> */}
-      {/* <StudentList students={students}/> */}
-      <About />
+      <Header />
+      <NavigationBar />
+      {/* <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/students' element={<StudentList students={students} />} />
+      </Routes> */}
+      <Footer />
       
     </>
   )

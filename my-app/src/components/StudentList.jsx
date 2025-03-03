@@ -4,7 +4,6 @@ const StudentList = (props) => {
     const students = props.students;
   return (
     <div className='container'>
-        <h1 className='h2'>Students List of IT Department</h1>
         <table className='table1'>
             <thead>
                 <th>S.NO</th>

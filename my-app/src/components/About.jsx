@@ -3,7 +3,6 @@ import "../css/About.css";
 function About() {
   return (
     <div className="about">
-      <h1 className="h5">About the Student Attendance Management System</h1>
       <p>
         This project is developed for the **IT Department - A Section** to **streamline student attendance tracking**. 
         It provides an efficient way for teachers to mark and manage student attendance digitally.
